@@ -1,16 +1,12 @@
 :host{
   .main-wrapper{
-    width:800px;
-    height: 600px;
-    max-height: 95vh;
-    max-width: 100vw;
-    padding-top:40px;
-    margin:auto;
-    border: 1px solid #696969;
+    width: 90vw;
+    margin: auto;
+    border: 1px solid #acaaaa;
     border-radius: 5px;
+    padding: 1.5em;
     .list-container{
       min-width: 300px;
-      min-height: 300px;
       border-radius:5px;
       border: 1px solid #696969;
     }
