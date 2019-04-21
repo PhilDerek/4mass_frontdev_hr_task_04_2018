@@ -2,7 +2,8 @@
   <div *ngFor="let item of planetsList"
         fxLayout="row"
         fxLayoutGap="1em"
-        fxLayout.lt-sm="column">
+        fxLayout.lt-sm="column"
+        class="single-planet">
      <div class="planet-name" fxFlex="1fr">{{item.name}}</div>
      <div fxFlex="1fr">{{item.climate}}</div>
      <div fxFlex="1fr">{{item.terrain}}</div>

@@ -1,20 +1,38 @@
 :host{
   .main-wrapper{
-    width: 90vw;
+    width: 80vw;
     margin: auto;
-    border: 1px solid #acaaaa;
+    background-color: #fff;
     border-radius: 5px;
     padding: 1.5em;
-    margin-top: 1em;
-    // .list-container{
-    //   min-width: 300px;
-    //   border-radius:5px;
-    //   border: 1px solid #696969;
-    // }
+    margin: 1em auto 1em;
+    box-shadow: 1px 1px 5px grey;
+    text-align: center;
     mat-form-field{
       max-width: 300px;
     }
   }
+
+  // MEDIA QUERIES TABLETS & DESKTOPS
+
+  @media (min-width:601px) {
+    .main-wrapper{
+      text-align: left;
+    }
+  }
+
+  @media (min-width:776px) {
+      .main-wrapper{
+        width: 70vw;
+      }
+    }
+
+    @media (min-width: 1026px) {
+      .main-wrapper{
+        width: 60vw;
+      }
+    }
+
 
 }
 
