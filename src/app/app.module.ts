@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ListComponent } from './list/list.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   {
@@ -25,7 +26,8 @@ const routes: Routes = [
    declarations: [
       AppComponent,
       MainComponent,
-      ListComponent
+      ListComponent,
+      SearchComponent
    ],
    imports: [
       BrowserModule,
