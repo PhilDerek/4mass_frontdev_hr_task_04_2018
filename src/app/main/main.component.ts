@@ -18,12 +18,11 @@ export class MainComponent implements OnInit {
    this.filteredList = this.list;
   }
 
-// filter search values
-onSearchValueChanges(inputElement:HTMLInputElement){
-  console.log(inputElement.value)
-  this.filteredList = this.list.filter(planet => {
-    return planet.name.toLowerCase().includes(inputElement.value.toLowerCase())
-  })
-}
+  // filter search values
+  onSearchValueChanges(inputElement:HTMLInputElement){
+    this.filteredList = this.list.filter(planet => {
+      return planet.name.toLowerCase().includes(inputElement.value.toLowerCase())
+    })
+  }
 
 }

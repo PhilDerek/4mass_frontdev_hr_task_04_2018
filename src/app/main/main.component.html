@@ -1,12 +1,12 @@
 <div class="main-wrapper" fxLayout="column" fxLayoutAlign="start center">
   <header fxLayout="row" fxLayout.lt-sm="column-reverse">
-      <div class="header-text" fxLayout="column" gdAlignColumns="stretch">
-        <h3>Connect with space</h3>
-        <p>Search for some info about planets</p>
-        <mat-form-field>
-          <input matInput #searchInput type="text" (keyup)="onSearchValueChanges(searchInput)" fxFlexAlign="end" placeholder="Planet name">
-        </mat-form-field>
-      </div>
+    <div class="header-text" fxLayout="column" gdAlignColumns="stretch">
+      <h3>Connect with space</h3>
+      <p>Search for some info about planets</p>
+      <mat-form-field>
+        <input matInput #searchInput type="text" (keyup)="onSearchValueChanges(searchInput)" placeholder="Planet name">
+      </mat-form-field>
+    </div>
     <img src="../../assets/images/space.png" alt="space" class="head-banner">
   </header>
   <app-list [planetsList]="filteredList"></app-list>
