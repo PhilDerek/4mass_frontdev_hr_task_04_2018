@@ -9,15 +9,21 @@ import { Planet } from '../dummy';
 })
 export class MainComponent implements OnInit {
   public list:Planet[] = [];
+  public filteredList:Planet[] = [];
 
   constructor(private _service: MainService) { }
 
   ngOnInit() {
    this.list = this._service.list;
+   this.filteredList = this.list;
   }
 
+// filter search values
 onSearchValueChanges(inputElement:HTMLInputElement){
-
+  console.log(inputElement.value)
+  this.filteredList = this.list.filter(planet => {
+    return planet.name.toLowerCase().includes(inputElement.value.toLowerCase())
+  })
 }
 
 }
