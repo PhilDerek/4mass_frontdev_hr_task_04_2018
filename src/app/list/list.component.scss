@@ -1,6 +1,19 @@
-:host{
-  .main-wrapper{
-    max-width: 1000px;
-    max-height: 500px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext');
+
+:host {
+  table {
+    margin-bottom: 40px;
+    width: 600px;
+    font-family: 'Montserrat', sans-serif;
+
+    th {
+      text-align: center;
+      font-weight: 700;
+    }
+
+    td {
+      text-align: center;
+      padding: 20px;
+    }
   }
 }
