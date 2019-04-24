@@ -1,5 +1,18 @@
 :host{
   .main-wrapper{
-    width:80%;
-  }
+    padding: 20px 0px;
+    width:95%; margin: 0px auto; color: lightgray;
+    font-size: 18px;letter-spacing: 1px;
+      
+      div { width: 100%; }
+      .kateg{ margin-bottom: 30px;  padding-bottom: 10px;  border-bottom: 1px solid gray; 
+              align-items: baseline;
+            }
+      .kateg:last-child { border: none; }  
+      .name {
+        font-size: 21px;   
+        color: 		#B0E0E6;
+        text-align: center; 
+            }  
+   }                                                               
 }

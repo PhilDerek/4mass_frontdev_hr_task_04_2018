@@ -1,0 +1,22 @@
+:host .main-wrapper {
+  padding: 20px 0px;
+  width: 95%;
+  margin: 0px auto;
+  color: gray;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: lightgray;
+  text-align: center; }
+  :host .main-wrapper div {
+    width: 100%; }
+  :host .main-wrapper .kateg {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    align-items: baseline; }
+  :host .main-wrapper .kateg:last-child {
+    border: none; }
+  :host .main-wrapper .name {
+    font-size: 21px; }
+
+/*# sourceMappingURL=list.component.css.map */
