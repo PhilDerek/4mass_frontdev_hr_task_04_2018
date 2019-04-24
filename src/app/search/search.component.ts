@@ -6,8 +6,8 @@ declare function search(): any;
 
 @Component({
   selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  template: ``,
+  styles: [`p{color: red}`]
 })
 export class SearchComponent implements OnInit {
 
