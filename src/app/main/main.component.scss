@@ -8,22 +8,12 @@
     margin: 1em auto 1em;
     box-shadow: 1px 1px 5px grey;
     text-align: center;
-
-// SEARCH FIELD
-
-    mat-form-field {
-      max-width: 100%;
-      font-family: 'Arial';
+    mat-form-field{
+      max-width: 300px;
     }
-
-    .search-input {
-      padding: 0 0 .3em .5em;
-    }
-
-
   }
 
-  // MEDIA QUERIES - TABLETS & DESKTOPS
+  // MEDIA QUERIES TABLETS & DESKTOPS
 
   @media (min-width:601px) {
     .main-wrapper{
