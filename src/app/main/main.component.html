@@ -1,10 +1,9 @@
 <div class="main-wrapper" fxLayout="column" fxLayoutAlign="start center">
-  <mat-form-field appearance="standard" >
-    <input matInput #searchInput type="text" (keyup)="onSearchValueChanges(searchInput)"  placeholder="Szukaj">
-    <mat-icon matSuffix svgIcon="search" class="search-icon" ></mat-icon>
+  <mat-form-field >
+    <input matInput #searchInput type="text" (keyup)="onSearchValueChanges(searchInput)" >
+    <mat-icon matSuffix svgIcon="search" class="search-icon" class="loopicon"></mat-icon>
+    <mat-placeholder class="placeholder">Click to search Planet</mat-placeholder>
   </mat-form-field>
-
     <app-list [planetsList]="list"></app-list>
-
-
+    <div class="info">Hover planet to get info!</div>
 </div>

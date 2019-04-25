@@ -3,5 +3,9 @@
 body{
   padding:0px;
   margin:0px;
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(172,139,173,1) 83%, rgba(172,139,173,1) 100%);
+  font-family: 'Cute Font', cursive;
+}
+html{
+  background-image: url("bgsite.jpg");
+  background-size: cover;
 }
