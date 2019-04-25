@@ -1,5 +1,53 @@
-:host{
-  .main-wrapper{
-    width:80%;
+:host {
+  .main-wrapper {
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .ng-star-inserted {
+    height: 130px;
+    width: 90%;
+    transition: 0.5s;
+    align-items: center;
+    &:hover{
+      transform: scale(1.1);
+    }
+    .container {
+      height: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background-color: #3498db;
+      .name {
+        height: 120px;
+        min-width: 120px;
+        border: 3px solid white;
+        border-radius: 50%;
+        background-color: #e74c3c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -30px;
+      }
+      .description {
+        margin: auto;
+        height: 100%;
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        span {
+          font-weight: 700;
+        }
+        @media screen and (max-width: 576px) {
+          font-size: 0.8em;
+        }
+      }
+    }
   }
 }

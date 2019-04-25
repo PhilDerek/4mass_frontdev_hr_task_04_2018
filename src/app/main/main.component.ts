@@ -17,7 +17,14 @@ export class MainComponent implements OnInit {
   }
 
 onSearchValueChanges(inputElement:HTMLInputElement){
-
+  let search: string = inputElement.value.trim().toLocaleUpperCase();
+  let arr: any[];
+  if(search == ""){
+    this.ngOnInit()
+  }else {
+    arr = this._service.list.filter(el => el.name.toLocaleUpperCase().includes(search))
+    this.list = arr;
+  };
 }
 
 }
