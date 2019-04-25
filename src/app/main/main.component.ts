@@ -8,7 +8,7 @@ import { Planet } from '../dummy';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  public list:Planet[] = [];
+  public list: Planet[] = [];
 
   constructor(private _service: MainService) { }
 
@@ -17,7 +17,7 @@ export class MainComponent implements OnInit {
   }
 
 onSearchValueChanges(inputElement:HTMLInputElement){
-
+  console.log('działa');
 }
 
 }
