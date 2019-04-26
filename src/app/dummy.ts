@@ -2,6 +2,7 @@ export const dummyData = JSON.parse(`{
 	"count": 61,
 	"next": "https://swapi.co/api/planets/?page=2",
 	"previous": null,
+	"info": "no result",
 	"results": [
 		{
 			"name": "Alderaan",
@@ -231,6 +232,7 @@ export interface Dummy {
   next:     string;
   previous: null;
   results:  Planet[];
+  info: string;
 }
 
 export interface Planet {

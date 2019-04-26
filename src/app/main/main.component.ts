@@ -8,27 +8,27 @@ import { Planet } from '../dummy';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  public list:Planet[] = [];
-
+  public list:Planet[] = []
+  
   constructor(private _service: MainService) { }
 
   ngOnInit() {
-   this.list = this._service.list;
+   this.list = this._service.list
   }
 
   onSearchValueChanges(inputElement: HTMLInputElement) {
-    const elementsarray = new Array();
-    const getvalue = inputElement.value.toLowerCase().trim();
-
+    const elementsarray = new Array()
+    const getvalue = inputElement.value.toLowerCase().trim()
+    
     if (!getvalue) {
-      return this.list = this._service.list;
+        this.list = this._service.list
     }
       for (let i = 0; i < this._service.list.length; i++) {
         if (this._service.list[i].name.toLowerCase().includes(getvalue)) {
-          elementsarray.push(this._service.list[i]);
+          elementsarray.push(this._service.list[i])
         }
       }
-      return this.list = elementsarray;
+      return this.list = elementsarray
     }
 }
 

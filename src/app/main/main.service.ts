@@ -12,12 +12,7 @@ interface Item{
 export class MainService {
 
   public list: Planet[];
-
 constructor() {
   this.list = dummyData.results;
-
-}
-
-
-
+  }
 }
