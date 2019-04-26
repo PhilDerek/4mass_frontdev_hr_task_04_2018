@@ -19,15 +19,17 @@ export class MainComponent implements OnInit {
   onSearchValueChanges(inputElement: HTMLInputElement) {
     const elementsarray = new Array()
     const getvalue = inputElement.value.toLowerCase().trim()
+    const list = this._service.list
+
     if (!getvalue) {
       this.ngOnInit()
     }
       for (let i = 0; i < this._service.list.length; i++) {
-        if (this._service.list[i].name.toLowerCase().includes(getvalue)) {
+        if (list[i].name.toLowerCase().includes(getvalue)) {
           elementsarray.push(this._service.list[i])
         }
       }
-      return this.list = elementsarray
+      this.list = elementsarray
     }
 }
 
