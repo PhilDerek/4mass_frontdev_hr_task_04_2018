@@ -1,0 +1,37 @@
+.planetListColumns {
+    display: flex;
+    padding: 0 1vw;
+    text-align: center;
+    margin: 2vh 1vw;
+    padding: 1vh 0;
+    border: 2px solid #000;
+    position: relative;
+    top: 0;
+    left: 0;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 2px solid #000;
+        margin: .2em;
+        width: calc(100% - .6em);
+        height: calc(100% - .6em);
+    }
+    > * {
+        flex-basis: 20%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	.planetListColumns {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 601px) {
+	.planetListColumns {
+        font-size: 1.5rem;
+    }
+}

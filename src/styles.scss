@@ -1,7 +1,53 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../src/sass/base/_reset.scss";
+@import "../src/sass/components/_formField.scss";
+@import "../src/sass/layout/_planetListColumnsDescription.scss";
+@import "../src/sass/components/_preLoader.scss";
 /* You can add global styles to this file, and also import other style files */
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
 body{
-  padding:0px;
-  margin:0px;
-  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(172,139,173,1) 83%, rgba(172,139,173,1) 100%);
+	padding:0px;
+	margin:0px;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 350px) {
+	body {
+		background-image: url("../src/images/background-xxs.jpg");
+	}
+}
+
+@media screen and (min-width: 351px) {
+	body {
+		background-image: url("../src/images/background-xs.jpg");
+	}
+}
+
+@media screen and (min-width: 600px) {
+	body {
+		background-image: url("../src/images/background-sm.jpg");
+	}
+}
+
+@media screen and (min-width: 900px) {
+	body {
+		background-image: url("../src/images/background-md.jpg");
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	body {
+		background-image: url("../src/images/background-lg.jpg");
+	}
 }

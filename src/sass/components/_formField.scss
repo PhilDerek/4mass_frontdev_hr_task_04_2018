@@ -1,0 +1,21 @@
+mat-form-field.main-wrapper__formField {
+    .mat-form-field-flex {
+        background-color: #fff;
+        padding: 0 .5em;
+        margin-top: 1em;
+        border-radius: 2px;
+        .main-wrapper__formField__input {
+            font-size: 1.2rem;
+            &::placeholder {
+                color: rgb(50, 50, 50);
+            }
+        }
+        mat-icon.search-icon {
+            padding: .23em;
+            border-radius: 50%;
+            background-color: rgb(254, 189, 105);
+            
+        }
+    }
+    
+}

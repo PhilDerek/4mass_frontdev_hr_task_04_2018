@@ -1,0 +1,96 @@
+.hidden {
+    display: none;
+}
+
+.preLoader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(100, 100, 100);
+    &__star {
+        position: absolute;
+        transform: translate(-50%, -50%) rotate(0);
+        &--star1 {
+            top: calc(50% - 75px);
+            left: calc(50% - (437px / 2 + 75px));
+            animation: starPath1 4s infinite linear;
+        }
+        &--star2 {
+            top: calc(50% + 75px);
+            left: calc(50% + (437px / 2 + 75px));
+            animation: starPath2 4s infinite linear;
+        }
+        &__polygon {
+            fill: rgb(254, 189, 105);
+            fill-rule: nonzero;
+        }
+    }
+    &__text {
+        font-size: 5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+    }
+}
+
+@keyframes starPath1 {
+    0% {
+        top: calc(50% - 75px);
+        left: calc(50% - (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    42% {
+        top: calc(50% - 75px);
+        left: calc(50% + (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(130deg);
+    }
+    50% {
+        top: calc(50% + 75px);
+        left: calc(50% + (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    92% {
+        top: calc(50% + 75px);
+        left: calc(50% - (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(310deg);
+    }
+    100% {
+        top: calc(50% - 75px);
+        left: calc(50% - (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes starPath2 {
+    0% {
+        top: calc(50% + 75px);
+        left: calc(50% + (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    42% {
+        top: calc(50% + 75px);
+        left: calc(50% - (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(130deg);
+    }
+    50% {
+        top: calc(50% - 75px);
+        left: calc(50% - (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+    92% {
+        top: calc(50% - 75px);
+        left: calc(50% + (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(310);
+    }
+    100% {
+        top: calc(50% + 75px);
+        left: calc(50% + (437px / 2 + 75px));
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

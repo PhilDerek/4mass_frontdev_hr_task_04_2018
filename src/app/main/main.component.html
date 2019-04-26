@@ -1,9 +1,10 @@
 <div class="main-wrapper" fxLayout="column" fxLayoutAlign="start center">
-  <mat-form-field appearance="standard" >
-    <input matInput #searchInput type="text" (keyup)="onSearchValueChanges(searchInput)"  placeholder="Szukaj">
+  <h1 class="main-wrapper__title">Star Wars Cities</h1>
+  <mat-form-field appearance="standard" fxLayoutAlign="start center" class="main-wrapper__formField">
+    <input matInput #searchInput type="text" (keyup)="onSearchValueChanges(searchInput)"  placeholder="Search for cities..." class="main-wrapper__formField__input">
     <mat-icon matSuffix svgIcon="search" class="search-icon" ></mat-icon>
   </mat-form-field>
-
+    
     <app-list [planetsList]="list"></app-list>
 
 

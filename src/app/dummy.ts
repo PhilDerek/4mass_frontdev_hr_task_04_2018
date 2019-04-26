@@ -223,7 +223,7 @@ export const dummyData = JSON.parse(`{
 			"url": "https://swapi.co/api/planets/11/"
 		}
 	]
-}`)
+}`);
 
 
 export interface Dummy {

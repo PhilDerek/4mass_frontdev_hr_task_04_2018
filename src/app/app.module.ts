@@ -1,24 +1,24 @@
 import { BrowserModule, DomSanitizer } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
-import { MatIconModule, MatInputModule, MatIconRegistry} from '@angular/material'
+import { MatIconModule, MatInputModule, MatIconRegistry} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFormFieldModule } from '@angular/material';
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component'
+import { MainComponent } from './main/main.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
   {
-    path: "**",
-    redirectTo:'main',
+    path: '**',
+    redirectTo: 'main',
 
   },
   {
-    path: "main",
-    component:MainComponent,
+    path: 'main',
+    component: MainComponent,
   }
 ];
 @NgModule({
@@ -32,12 +32,12 @@ const routes: Routes = [
       BrowserAnimationsModule,
       HttpClientModule,
 
-      //Angular Material Modules
+      // Angular Material Modules
       MatFormFieldModule,
       MatIconModule,
       MatInputModule,
 
-      //Angular Flex
+      // Angular Flex
       FlexLayoutModule,
 
       RouterModule.forRoot(routes)
